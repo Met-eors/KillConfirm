@@ -1,0 +1,18 @@
+name: KillConfirm
+version: '${version}'
+main: cn.killconfirm.KillConfirmPlugin
+api-version: '26.1'
+folia-supported: true
+description: 玩家使用 /kill 时弹出确认对话框，只允许自杀，禁止借 /kill 杀害他人。
+authors: [KillConfirm]
+
+permissions:
+  killconfirm.use:
+    description: 允许通过 /kill 弹出确认框进行自杀
+    default: true
+  killconfirm.others:
+    description: 允许使用原版 /kill <目标> 杀死其他实体/玩家（仅建议管理员）
+    default: op
+  killconfirm.bypasscooldown:
+    description: 无视 /kill 冷却
+    default: op
